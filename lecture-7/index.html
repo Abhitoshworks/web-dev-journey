@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Volleyball club</title>
+</head>
+<body>
+    <h1>Volleyball club tournament participation form</h1>
+    <form method="post">
+        <!-- mostly post hi use krte multiple data ke liye -->
+    <div>
+     <label for = "username">Enter your username</label>
+     <input type="text" id="username" name="username" value="">
+    </div>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">male</label>
+    <!-- name="gender"=Ye courier ke dabbe ka naam hai.Jisse server ko pata chale ki dabbe me 
+     kya aane wala hai.value="male" = Ye us dabbe ke andar rakha samaan hai. -->
+     <input type="radio" id="female" name="gender" value="female">
+    <label for="female">female</label>
+    <!-- <label for="fan"> = Ye wo sticker hai.
+         <input id="fan"> = Ye wo asli switch hai. -->
+    <textarea name="comment" rows ="4" columns="75">Enter why should we choose u</textarea>
+    <select name="Position">
+        <option value="Spiker">Spiker</option>
+        <option value="Libro">Libro</option>
+         <option value="Center">Center</option>
+    </select>
+   </form>
+    
+</body>
+</html>
