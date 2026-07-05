@@ -1,0 +1,13 @@
+/* #mtlb id ko target hota hai . mtlb class ko target hota hai */
+.red{
+    color: rgb(0, 102, 255);
+}
+.bg-yellow{
+    background-color: rgb(255, 203, 161);
+}
+#firstdiv{
+    /* background-color: red; */
+}
+span{
+    background-color: rgb(42, 199, 55);
+}
