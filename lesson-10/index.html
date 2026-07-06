@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add video and audio media</title>
+   
+</head>
+<body>
+    <video src="video.mp4" width="300" height="300" controls></video>
+
+<!-- autoplay & muted: If you want a video to play automatically, modern browsers require you to add the muted attribute alongside autoplay.
+loop: Makes the video start over when it finishes. -->
+
+
+<audio src="sound.mp3" controls muted autoplay loop></audio>
+<!-- preload: browser ko batata hai ki page khulte hi video ko background mein download karna hai ya nahi.
+Iske sirf 3 kaam hote hain:
+none: Kuch download mat kar. (Is se website fast khulti hai aur user ka data bachta hai).
+metadata: Sirf video ki basic info laa (jaise duration aur size). Pura video nahi.
+auto: Bhai tu pura video background mein load karna shuru kar de, taaki bina buffering ke play ho. -->
+<image src="img.svg"></image>
+<iframe src="https://www.wikipedia.org/" width="600" height="400" title="Wikipedea"></iframe>
+<!-- ifram kisi bhi website ka chota sa overview add krdeta -->
+</html>>
