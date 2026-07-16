@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS sizing units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box{
+            box-sizing: border-box;
+          border: 2px solid black;
+          width: 80vw;
+          /* 100 viewport width mtlb pura 100 percent width of your browser window */
+    
+          margin: auto;
+          /* margin auto se left aur right ka margin equal hojata */
+          background-color: aqua;
+          width: 50%;
+          /* widht 50% mtlb parent width ka 50 percent */
+          
+          }
+          html{
+            font-size: 12px;
+          }
+          /* html ko root bhi kehte */
+        .container{
+            box-sizing: border-box;
+            border: 2px solid brown;
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            /* min 80vh krne se yeh hua like aage aur bhi badh skta fix nhi hai height ab
+            content ke according badhega */
+            margin: 25px auto;
+            /* auto ke beech me 25px wo top bottmo it margin aur auto left right ka margin */
+             background-color: aqua;
+        font-size: 2rem;
+        /* 2 rem mtlb jitna root ko milne wala tha uska 2x */
+
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="box">
+         this is a box
+    </div>
+    <div class="container">
+        this is another box not lorem
+    </div>
+</body>
+</html>
