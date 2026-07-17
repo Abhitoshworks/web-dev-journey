@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling using CSS</title>
+</head>
+<style>
+    nav ul {
+         display: flex;
+         
+    }
+    /* hamne nav ul dubara isliye likha kyoki display flex parent element pe lagta hai */
+    /* flex taki horizontal hojaye */
+    nav ul li {
+        
+       
+        margin: 2px;
+        list-style: decimal;
+        background-color: aqua;
+        list-style-position: inside;
+        /* agar liststyle position ko inside nhi krte toh market 1. 2. 3. include nhi hota aqua me */
+        border: 2px solid black;
+        /* ye border bhi decimal ko include kia position inside ki wajah se */
+    }
+</style>
+
+<body>
+    <nav>
+        <ul>
+           
+            <li>Volleyball</li>
+            <li>minecraft</li>
+            <li>web development</li>
+        </ul>
+    </nav>
+</body>
+
+</html>
