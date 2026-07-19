@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS position</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: 2px solid black;
+        height: 400px;
+        width: 100vw;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .box1 {
+        background-color: aqua;
+        position: sticky;
+        top: 0px;
+        /* position sticky aur top 0px ki wajah se ye aqua box upar hi chipka rahega */
+        width: 340px;
+        height: 8vh;
+    }
+    .box2 {
+        
+         background-color: blue;
+       }
+
+    .box3 {
+        background-color: blueviolet;
+        position: fixed;
+        /* fixed ki wajah se purple color box fix hai wo apni jagah se nhi hilega */
+        height: 200px;
+        left: 52px;
+        bottom: 0px;
+        /* ye box ko bottom me pura adjust krdega */
+    }
+
+    .box4 {
+        background-color: brown;
+    }
+    .parent{
+        margin: 0;
+        padding: 0;
+        border: 4px solid rgb(232, 83, 83);
+    }
+</style>
+
+<body>
+    <div class="parent">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    </div>
+</body>
+<!-- *exception: transform, filter, ya perspective ye sab parent element me position ka kaam krte
+ absolute ki tarah 3no position element ki tarah assign kra skti hai -->
+
+</html>
