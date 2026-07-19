@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>CSS position</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .box {
+        border: 2px solid black;
+        height: 84px;
+        width: 100vw;
+        margin: 2px;
+        padding: 2px;
+    }
+
+    .box1 {
+        background-color: aqua;
+        position: relative;
+        z-index: 2;
+        /* Bhai, overcomplicate mat kar. Ek simple example sun: Table par ek ke upar ek books rakhi hain.
+           Sabse neeche wali book = z-index: 1
+           Uske theek upar wali book = z-index: 2
+           Sabse upar wali book = z-index: 3
+           Bas yahi hai z-index. Sirf layers decide karta hai ki kon aage dikhega, kon peeche. */
+        left: 28px;
+        top: 85px;
+        /* relative krne pe hi move hota hai */
+    }
+    .box2 {
+        position:absolute;
+        top:0px;
+        /* nearest position ancestor pe lagta hai absolute position */
+        /* element ko absolute deta hai, toh baaki saare elements aise behave 
+        karte hain jaise wo element page par exist hi nahi karta */
+        /* agar fir bhi smjh na aye absolute bhul gye toh ai krlena parent element wagera */
+         background-color: blue;
+       }
+
+    .box3 {
+        background-color: blueviolet;
+    }
+
+    .box4 {
+        background-color: brown;
+    }
+    .parent{
+        margin: 0;
+        padding: 0;
+        border: 4px solid rgb(232, 83, 83);
+    }
+</style>
+
+<body>
+    <div class="parent">
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
