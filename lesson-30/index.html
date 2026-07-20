@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS variables</title>
+    <style>
+        /* :root root ke andar kuch bhi wo global variable */
+        :root{
+            --color: blue;
+            --seccolor:rgb(137, 137, 255);
+            --defpad:5px; /*border variable*/
+            --defop:0.7; /*capacity variable ie opacity*/
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+    ul li{
+        list-style: none;
+        /* bullet points htana li se */
+         margin: 23px;
+    }
+    ul{
+        display: flex;
+       
+    }
+    ul li:first-child{
+        --color: rgb(221, 255, 0);
+        /* idhar mene color ko gloal se local variable bna dia overwrite krke */
+        background-color: var(--color);
+        opacity: var(--defop);
+    }
+    ul li:nth-child(2){
+        background-color: var(--apple,red);
+        border: var(--defpad) solid var(--seccolor);
+        /* agar color variable nhi hoga uske bagal me define krdo uska color toh ban jayega */
+    }
+     .nav{
+         background-color: var(--color);
+     }
+     .container{
+        background-color: var(--seccolor);
+     }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>contact</li>
+        </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum omnis totam distinctio
+         voluptas illum. Ducimus, culpa possimus nisi non velit repudiandae error sit!
+    </div>
+</body>
+</html>
