@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS selectors</title>
+    <style>
+        /* .box:nth-child(2){
+            background-color: aqua;
+        } */
+        .boxes *{
+            color: blue;
+            border: 2px solid black;
+        }
+        [data-color="primary"]{
+            padding-top: 45px;
+        }
+        .box:nth-child(even){
+            background-color: aqua;
+        }
+        .boxes::before{
+            content: "Aloo is the goat";
+            /* important css me before dalke top me sentence add kr skte */
+        }
+        .boxes::after{
+            content: "Aloo is the goat";}
+    </style>
+</head>
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">i am box 1</div>
+        <div class="box">i am box 2</div>
+        <div class="box">i am box 3</div>
+        <div class="box">i am box 4</div>
+    </div>
+</body>
+</html>
