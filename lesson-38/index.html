@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS flex</title>
+    <style>
+        .container{
+           border: solid red;
+           display:flex;
+           height: 50vh;
+           justify-content: center;/*wisth centre*/ 
+           align-items: center; /*height centre*/
+           
+        }
+        .item{
+            background-color: blueviolet;
+            height: 12px;
+            width: 12px;
+            border: 2px solid black;
+            margin:4px;
+            flex-grow: 1;
+            /* item grow 1 mtlb saare dabbo me baseline ka 1 share milega */
+
+        }
+        .order{
+            order: 1;
+            flex-grow: 2 ; /*aur isko 2 share milega 2 ki jagah lega*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item order">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item"></div>
+        <!-- Every single flex item on your screen automatically
+             starts with a hidden value of order: 0  isliye order:1 last me gya-->
+    </div>
+</body>
+</html>
+<!-- revise krte waqt align flex end bhi dekhlena -->
