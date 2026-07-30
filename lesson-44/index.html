@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS transitions</title>
+</head>
+<style>
+    .grow-btn {
+  background-color: blue;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  cursor: pointer;
+
+  /* THE TRANSITION SETUP */
+  transition-property: all;              /* Animate both color and size */
+  transition-duration: 1s;               /* Take 1 full second to complete */
+  transition-timing-function: ease-in-out; /* Start slow, speed up, end slow */
+  transition-delay: 0.5s;                /* Wait 0.5 seconds before starting */
+}
+
+/* This is the state the button transitions TO when hovered */
+.grow-btn:hover {
+  background-color: red;
+  transform: scale(1.2); /* Makes the button 20% larger */
+}
+</style>
+<body>
+    <button class="grow-btn">Hover Me!</button>
+</body>
+</html>
