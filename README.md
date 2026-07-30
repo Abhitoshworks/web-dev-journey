@@ -9,14 +9,6 @@ The goal of this repository is to build a solid foundation in web development. B
 * HTML5
 * CSS3
 * JavaScript
-* (Add any other frameworks or tools you learn, like React or Bootstrap)
-
-## 📁 Folder Structure
-To keep things organized, the code is divided into topic-specific folders:
-* `/html-basics` - Introductory HTML tags and structure.
-* `/css-styling` - Layouts, Flexbox, Grid, and animations.
-* `/js-fundamentals` - Variables, functions, DOM manipulation.
-* `/mini-projects` - Small, combined projects applying multiple skills.
-
-## 💡 Acknowledgements
-* Learning resources and tutorial guidance from **Code With Harry**.
+* Node.js & Express
+* MongoDB
+* React
