@@ -18,3 +18,6 @@ let b = a.map((meow)=>{
 let d = [2,3,4,5,6];
 const isGreaterThenThree = (e)=> e>3;
 console.log(d.filter(isGreaterThenThree));
+
+const isgreaterthenfive= (d) => d>5;
+console.log(d.filter(isgreaterthenfive));
