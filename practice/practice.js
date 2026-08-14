@@ -1,4 +1,4 @@
-//  Ye function do numbers (maan lo num1 aur num2) lega,
-//  aur un dono ko jod kar (add karke) result dega.
-const sum= (num1,num2) => num1+num2;
-console.log(sum(1,3));
+
+let enemiesHP = [40, 150, 20, 200, 10];
+const greaterThen50 = (e) => e>50;
+console.log(enemiesHP.filter(greaterThen50));
