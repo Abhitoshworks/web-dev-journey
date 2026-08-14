@@ -1,8 +1,4 @@
-let a = [1,2,3,4,5];
-let b = [];
-for (let index = 0; index < a.length; index++) {
-    const element = a[index];
-    b.push(element**2);
-    console.log(b);
-    
-}
+//Kaam: Ye function ek number lega aur usko 10 se multiply karke result dega.
+
+const a = (integer) => integer*10;
+console.log(a(5));
