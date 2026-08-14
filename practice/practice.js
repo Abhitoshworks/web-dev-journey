@@ -1,4 +1,4 @@
-//Kaam: Ye function ek number lega aur usko 10 se multiply karke result dega.
-
-const a = (integer) => integer*10;
-console.log(a(5));
+//  Ye function do numbers (maan lo num1 aur num2) lega,
+//  aur un dono ko jod kar (add karke) result dega.
+const sum= (num1,num2) => num1+num2;
+console.log(sum(1,3));
