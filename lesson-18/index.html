@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin Padding Borders</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0; 
+        }
+        .box{
+            background-color: rgb(0, 0, 0);
+        }
+        .box1{
+            color: aqua;
+            padding: 10px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: chartreuse;
+             padding: 10px;
+            margin: 25px; /*important = margin collapse spacing 50 ki nhi hogi maximum wale ki hogi*/
+            border: 2px solid blue;
+            height: 200px;
+            box-sizing: border-box;
+            
+        }
+
+        
+    </style>
+</head>
+<!-- Calculating the total dimension of the element  
+The total width and height of the element is calculated with the formula:  
+
+Total Width = Width + Left Padding + Right Padding + Left Border + Right Border + Left Margin + Right Margin  
+
+Total Height = Height + Top Padding + Bottom Padding + Top Border + Bottom Border + Top Margin + Bottom Margin -->
+<body>
+    <div class="box box1">
+        I am a box
+    </div>
+    <div class="box box2">
+        I am box2
+    </div>
+</body>
+</html>

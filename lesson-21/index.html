@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS specifity and cascade</title>
+    <style>
+        h1{
+            color: black;
+        }
+        .yellow{
+            color: yellow;
+        }
+        .cred{
+            color: red;
+        }
+        .purple{
+            color: purple;
+            color: blue !important; 
+            /* !important ki wajah se blue ko first priority di jayegi inline se bhi jada */
+        }
+        /* h1 jo hai wo koi colour na hoke purple hoga kyoki wo neeche hai isse CASCADE kehte */
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: brown;"  class="yellow cred purple">CSS specificiy</h1>
+        <!-- ab ye purple nhi rhega kyoki inline style -->
+        <!-- Specifity = Inline style > ID Selector > Class or Attribute Selector > 
+         Element Selector > Universal Selector -->
+    </div>
+</body>
+</html>

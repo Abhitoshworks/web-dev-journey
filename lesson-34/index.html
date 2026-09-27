@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float and clear</title>
+
+    <style>
+        .classes {
+            border: 4px solid rgb(38, 203, 236);
+
+        }
+
+        img {
+            float: left;
+            /* float left krne se jo text hai wo neeche na hoke image ke bagal me hoga */
+        }
+
+        .class {
+            border: 4px solid rgb(236, 157, 38);
+            display: flow-root;
+            /* flow root se overflow control hua */
+        }
+        .class p{
+            background-color: rgb(195, 27, 228);
+            clear: left;
+            /* clear left ki wajah se image ke bagal jo lorem tha wo clear hoke niche ajayega */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="class">
+        <img src="kitty.png" width="240px" height="200px">
+        <div class="classes">Card 1</div>
+        <div class="classes">Card 2</div>
+        <div class="classes">Card 3</div>
+        <div class="classes">Card 4</div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ab fugit cum adipisci error necessitatibus! Ex
+            in omnis quos, nihil eligendi, placeat minus quas alias a laboriosam sapiente sequi quod, dolor quisquam
+            eius esse soluta molestias. Dicta aliquid est tempora dignissimos incidunt nisi velit, labore minima ratione
+            beatae id alias. Est perferendis vel aperiam sunt quis deserunt libero dignissimos adipisci necessitatibus
+            minima eos provident, id sint, nostrum fuga cumque officiis reiciendis! Debitis ab voluptate qui
+            perspiciatis optio sapiente recusandae, quasi autem veniam ipsam nihil magni est, culpa, nulla expedita
+            provident quibusdam aspernatur molestiae? Et suscipit eius, deleniti ratione quos perferendis?</p>
+    </div>
+</body>
+
+</html>

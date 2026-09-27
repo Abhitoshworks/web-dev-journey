@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        button {
+            display: flex;
+            background-color: rgb(22, 226, 121);
+            color: black;
+            border: 3px solid black;
+            padding: 12px 24px;
+            font-size: large;
+            cursor: pointer;
+        }
+
+        .output {
+            color: rgb(78, 16, 2);
+            font-size: large;
+            padding-top: 24px;
+            font-weight: bold;
+        }
+
+        .container {
+            border: 3px solid #000000;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Business name generator</h1>
+        <button onclick="generatebusinessname()">Generate Name</button>
+        <div class="output">Click Above To Generate</div>
+    </div>
+
+    <script>
+        const adjective = ["pyara", "cute"," sexy"];
+        const naam = ["cooler","engine","ac"];
+        const end = ["hai","enterprises","ltd."];
+
+        function getrandomname(arr){
+            let randomindex = Math.floor(Math.random()*3);
+            return arr[randomindex];
+
+        }
+        function generatebusinessname(){
+            const final = getrandomname(adjective) + " " + getrandomname(naam) + " " + getrandomname(end);
+            document.querySelector(".output").innerText = final; 
+        }
+    </script>
+
+</body>
+
+</html>

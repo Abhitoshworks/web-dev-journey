@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>important CSS3 selectors</title>
+</head>
+<style>
+    div{
+        background-color: red;
+    }
+    /* class selector .red */
+    .red{  
+        background-color: pink;
+    }
+    /* id selector */
+    #red{
+        background-color: green;
+    }
+    /* child selector */
+    div > p {
+        color: blue;
+        background-color: black;
+    }
+    /* discendent selector */
+    div p{
+        color: aliceblue;
+        background-color: blueviolet;
+    }
+    /* universal selector */
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    /* pseudo selector */
+    a:visited{
+        color: yellow;
+    }
+    a:link{
+        color: blueviolet;
+    }
+    a:active{
+        background-color: red;
+    }
+    a:hover{
+        background-color: aqua;
+    }
+    p:first-child{
+        background-color: blue;
+    }
+    /* sabse pehle wala p ka color change hoga 2nd wale ka nhi */
+</style>
+<body>
+    <main class="one">
+        <p>i am one</p>
+         <p>i am second</p>
+ </main>
+    
+    <div>
+        mess with the best die with the best
+    </div>
+    <div class="red">
+        kings mentality
+    </div>
+    <div id="red">
+        kings mentality
+        <p>Sherrrrrrrrr</p>
+    </div>
+    <div>
+        <article>
+        <P>para inside article which is inside div</P>
+        </article>
+    </div>
+    <a href="https://www.wikipedia.org/">wikipedia</a>
+    <a href="https://www.google.com/">Google</a>
+</body>
+</html>

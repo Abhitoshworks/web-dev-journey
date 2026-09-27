@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEB</title>
+    <style>
+        button{
+            background-color: aqua;
+            font-size: large;
+            margin-bottom: 24px;
+        }
+        .button{
+            color: blue;
+            font-size: large;
+        }
+        body{
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Business name generator</h1>
+    <button onclick="generatebusinessname()">Generate name</button>
+    <div class="button">Click Above to generate</div>
+   <script>
+    function randomnum(){
+        return Math.floor(Math.random()*3+1);
+    }
+
+    function getadjective(){
+        let random = randomnum();
+        if(random == 1){
+            return "Nice";
+        }
+        else if(random == 2){
+            return "Perfect";
+        }
+        else{
+            return "WOW";
+        }
+    }
+
+    function getname(){
+        let random = randomnum();
+        if(random == 1){
+            return "Engine";
+        }
+        else if(random == 2){
+            return "Cafe";
+        }
+        else{
+            return "Library";
+        }
+    } 
+     
+    function getend(){
+        let random = randomnum();
+        if(random == 1){
+            return "Ltd.";
+        }
+        else if(random == 2){
+            return "International";
+        }
+        else{
+            return "national";
+        }
+    } 
+     
+    function generatebusinessname(){
+       let finalname = getadjective() + " " + getname() + " " +  getend();
+       document.querySelector(".button").innerText = finalname;
+    }
+   </script>
+</body>
+</html>

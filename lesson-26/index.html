@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS overflow</title>
+    <style>
+        .yap{
+            border: 2px solid black;
+            width: 40vh;
+            height: 20vh;
+            overflow: auto;
+            /* overflow scroll bar wagera add krdeta agar texts border me fit nhi aate */
+            /* overflow clip aur hidden same hote bas clip programmaticaly bhi scroll nhi krne deta */
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            /* ellipsis se end me ... ajate */
+            overflow-x:scroll;
+            overflow-y:hidden;
+            
+            /*overflow-x:scroll;  = overflow: hidden scroll;
+            overflow-y:hidden; */
+        }
+    </style>
+</head>
+<body>
+    <div class="yap">
+        you never gonna make it you are not good enough theres another
+        million people with the same stuff you think you different then 
+        you must be kidding its impossible its not probable...
+    </div>
+</body>
+</html>

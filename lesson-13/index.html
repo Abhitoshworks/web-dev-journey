@@ -1,0 +1,60 @@
+# HTML Survival Guide: Core vs. Trivia
+**Goal:** Build structural foundations. Do not memorize documentation.
+
+## 1. Media Tags (`<video>`, `<audio>`, `<iframe>`, `<svg>`)
+HTML media is about embedding, not engineering. 
+
+**🔴 MUST MEMORIZE (The Mechanics)**
+* `<video src="..." controls>`: You need `controls` or the user can't play it.
+* `autoplay muted`: Browsers block autoplay unless the video is explicitly `muted`.
+* `<iframe>`: The `src` attribute takes a URL. The `title` attribute is mandatory for accessibility.
+* **The Iframe Reality:** You cannot embed major sites (Google, GitHub) due to `X-Frame-Options` security headers (Clickjacking prevention).
+
+**🟢 GOOGLE LATER (Do Not Memorize)**
+* `preload`, `poster` attributes for video.
+* SVG code. Never write `<path>` or `<circle>` by hand. Copy-paste SVGs from Figma or icon libraries. Just know how to change `width`, `height`, and `fill`.
+
+---
+
+## 2. Semantic Layout
+Semantic tags do nothing visually. They exist purely for SEO (Search Engines) and Accessibility (Screen Readers).
+
+**🔴 MUST MEMORIZE (The Structure)**
+* `<header>`: Top-level branding and menus.
+* `<nav>`: The main navigation links of your site. Do not use for random links.
+* `<main>`: The core content. Only use ONE per page.
+* `<section>`: A distinct, grouped chunk of content with its own heading.
+* `<footer>`: Copyright and bottom links.
+
+**🟢 GOOGLE LATER (Do Not Memorize)**
+* `<article>` vs `<section>` debates.
+* `<figure>`, `<figcaption>`, `<aside>`, `<time>`, `<details>`.
+
+---
+
+## 3. Forms & Tables (The Heavyweights)
+This is where structure actually breaks if you guess the syntax.
+
+**🔴 MUST MEMORIZE (The Strict Rules)**
+* **Tables:** Strict hierarchy. `<table>` -> `<tr>` (Row) -> `<th>` (Header Cell) or `<td>` (Data Cell). You cannot put a `<p>` or `<ul>` directly inside a `<table>`. It must go inside a `<td>`.
+* **Void Elements:** `<input>` and `<img>` do NOT have closing tags. Writing `</input>` is illegal HTML.
+* **Radio Buttons:** To group radio buttons so only one can be selected, they must share the exact same `name` attribute (e.g., `name="gender"`).
+
+**🟢 GOOGLE LATER (Do Not Memorize)**
+* `colspan` and `rowspan` (merging table cells).
+* Complex form validation attributes (`pattern`, `maxlength`).
+
+---
+
+## 4. Text Formatting & Entities
+Reserved characters and heavy text blocks.
+
+**🔴 MUST MEMORIZE (The Essentials)**
+* `&lt;` (<) and `&gt;` (>): So the browser doesn't mistake your text for a real HTML tag.
+* `&amp;` (&): Safe way to write an ampersand.
+* `&nbsp;`: Forces a hard space (since HTML ignores multiple spacebar hits).
+* `<blockquote>`: For large, multi-line quotes.
+
+**🟢 GOOGLE LATER (Do Not Memorize)**
+* Currency/Math symbols (`&euro;`, `&copy;`).
+* Minor formatting tags: `<q>`, `<abbr>`, `<cite>`, `<bdo>`.

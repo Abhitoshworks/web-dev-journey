@@ -1,0 +1,41 @@
+1. HTML Code (index.html)
+He wrote a basic HTML boilerplate and added various elements to demonstrate the difference between block and inline elements:
+
+Title: <title>Inline and Block Elements - HTML</title>
+
+CSS Link: <link rel="stylesheet" href="style.css">
+
+Block Element (Paragraph): <p>Hey I am a para</p>
+
+Inline Element (Anchor): <a href="[https://google.com](https://google.com)">Google</a>
+
+Block Element (Div): <div>I am a block element</div>
+
+Inline Element (Span): <span>I am span and I am inline</span>
+
+Inline Element (Anchor): <a href="">yes he is inline</a>
+
+2. CSS Code (style.css)
+He wrote some basic CSS to add background colors to the HTML elements so viewers could visually see how much width each element takes up:
+
+Paragraph Styling: p { background-color: aquamarine; }
+
+Anchor Tag Styling: a { background-color: rgb(242, 160, 122); }
+
+Div Styling: div { background-color: yellow; }
+
+Span Styling: span { background-color: blueviolet; }
+
+3. Quick Quiz (HTML Comment)
+At the end of the HTML file, he wrote a "Quick Quiz" challenge for his viewers using an HTML comment:
+
+<!-- Quick Quiz: without using br tag, write a vertically aligned form asking for name, city and pincode of a user. Everyone must comment -> -->
+
+4. Comprehensive List (Comprehensive List.txt)
+He also showed a text file he wrote that contained a list of the most commonly used elements, categorized by type:
+
+Block Elements (Most Commonly Used First): <div>, <p>, <h1>-<h6>, <ul>, <ol>, <li>, <form>, <header>, <footer>, <section>, <nav>, <aside>, <article>, etc.
+
+Inline Elements (Most Commonly Used First): <a>, <img>, <span>, <input>, <label>, <strong>, <em>, <br>, <code>, <b>, <i>, <u>, etc.
+
+(Note: He emphasized that while HTML ignores extra spaces, writing clean and well-formatted code is a good practice.)
